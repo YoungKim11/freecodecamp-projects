@@ -13,22 +13,18 @@
 </header>
 <body>
     <div class="form-container">
-        <form>
+        <form id="survey-form">
             <div class="form-group">
-                <label id="first-name-label" for="first-name">First Name: </label>
-                <input id="first-name" name="first-name" type="text" placeholder="First Name">
-            </div>
-            <div class="form-group">
-                <label id="last-name-label" for="last-name">Last Name: </label>
-                <input id="last-name" name="last-name" type="text" placeholder="Last Name">
+                <label id="name-label" for="first-name">Name: </label>
+                <input id="name" name="first-name" type="text" placeholder="First Name" required>
             </div>
             <div class="form-group">
                 <label id="email-label" for="email">Email: </label>
-                <input id="email" name="email" type="email" placeholder="Email">
+                <input id="email" name="email" type="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-                <label id="age-label" for="age">Age: </label>
-                <input id="age" name="age" type="number" min="18" max="120" placeholder="Age">
+                <label id="number-label" for="age">Age: </label>
+                <input id="number" name="age" type="number" min="18" max="120" placeholder="Age">
             </div>
             <div class="form-group">
                 <p>Would you recommend us?</p>
@@ -72,15 +68,13 @@
             </div>
             <div class="form-group">
                 <p>We're here for a chat if there is any additional Comments 😊</p>
-                <textarea name="additional-comments" id="additional-textarea" cols="60" rows="10"></textarea>
+                <textarea name="additional-comments" id="additional-textarea" cols="30" rows="10"></textarea>
             </div>
             <div class="form-group">
-                <input type="button" id="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
             </div>
 
         </form>
     </div>
-    
-
 </body>
 </html>
